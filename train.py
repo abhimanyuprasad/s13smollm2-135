@@ -77,7 +77,7 @@ def main():
     
     # Initialize model
     model = LlamaForCausalLM(config)
-    model.train()
+    #model.train()
 
     # Create a dataset and dataloader using input.txt
     dataset = TextDataset(file_path='input.txt', vocab_size=config['vocab_size'])
