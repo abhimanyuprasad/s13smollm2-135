@@ -108,7 +108,7 @@ def main():
 
     # Create a dataset and dataloader using input.txt
     dataset = TextDataset(file_path='input.txt', vocab_size=config['vocab_size'])
-    dataloader = DataLoader(dataset, batch_size=2, shuffle=True)  # Further reduced batch size
+    dataloader = DataLoader(dataset, batch_size=4, shuffle=True)  # Further reduced batch size
 
     # Set up optimizer
     optimizer = optim.AdamW(model.parameters(), lr=0.003)
